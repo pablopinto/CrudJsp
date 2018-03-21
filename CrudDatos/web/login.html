@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="Login.css" type="text/css"/>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <!------ Include the above in your HEAD tag ---------->
+
+        <!-- All the files that are required -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+        <title>Logueando</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <script type="text/javascript" src="Login.js"></script>
+        <div class="text-center" style="padding:50px 0">
+            <div class="logo">login</div>
+            <!-- Main Form -->
+            <div class="login-form-1">
+                <form id="login-form" class="text-left" action="LoginServlet" method="post">
+                    <div class="login-form-main-message"></div>
+                    <div class="main-login-form">
+                        <div class="login-group">
+                            <div class="form-group">
+                                <label for="text" class="sr-only">Usuario</label>
+                                <input type="text" class="form-control" autocomplete ="off" id="name" name="name" placeholder="usuario">
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd" class="sr-only">Contraseña</label>
+                                <input type="password" class="form-control" id="pwd" name="password" placeholder="contraseña">
+                            </div>
+                            <div class="form-group login-group-checkbox">
+                                <input type="checkbox" id="lg_remember" name="lg_remember">
+                                <label for="lg_remember">remember</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
+                    </div>
+                    <div class="etc-login-form">
+                        <p>forgot your password? <a href="#">click here</a></p>
+                        <p>new user? <a href="#">create new account</a></p>
+                    </div>
+                </form>
+            </div>
+            <!-- end:Main Form -->
+        </div>
+
+
+
+        <!--
+       <form role="form" action="LoginServlet" method="post">
+           <div class="form-group">
+               <label for="text">Usuario:</label>
+               <input type="text"  name="name" class="form-control" id="name" autocomplete="off" >
+           </div>
+           <div class="form-group">
+               <label for="pwd">Contraseña:</label>
+               <input type="password" class="form-control" id="pwd"  autocomplete="off" name="password">
+           </div>
+           <div class="checkbox">
+               <label><input type="checkbox"> Remember me</label>
+           </div>
+           <button type="submit" class="btn btn-default">Submit</button>
+       </form>
+       
+        <!--
+        <form action="LoginServlet" method="post">  
+            Namvne:<input type="text" name="name" autocomplete="off" ><br>  
+            Password:<input type="password" name="password" autocomplete ="off" ><br>  
+            <input type="submit" value="login">  
+        </form>   
+        -->
+    </body>
+</html>
